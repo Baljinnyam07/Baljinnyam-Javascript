@@ -1,6 +1,8 @@
-function addNumbers(a, b) {
-    return a + b; ;
+async function myDisplay() {
+    let myPromise = new Promise(function(resolve, reject) {
+      resolve("I love You !!");
+    });
+    document.getElementById("demo").innerHTML = await myPromise;
 }
-x = addNumbers(1, 2);
-
-console.log(x)
+  
+myDisplay();
